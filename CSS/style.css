@@ -1,0 +1,66 @@
+body {
+        background-color: rgba(244, 225, 203, 0.879);
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: brown;
+        font-size: 16px;
+        padding: 8px 16px;
+        transition: color 0.3s;
+      }
+
+      .navbar a:hover {
+        color: rgb(32, 23, 23);
+      }
+
+      .main {
+        border: 5px solid brown;
+        border-radius: 45px;
+        padding: 15px;
+        margin-top: 50px;
+      }
+      h1 {
+        font-size: 200px;
+        color: brown;
+        font-family: "Comfortaa", sans-serif;
+      }
+      .heading {
+        margin-top: 100px;
+      }
+      .main-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 180px;
+        margin-top: 80px;
+      }
+      .profile {
+        width: 450px;
+        border-radius: 150px;
+        height: 450px;
+        border: 2px solid brown;
+      }
+      .group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (max-width: 768px) {
+        .header-container {
+          flex-direction: column;
+          gap: 30px;
+          margin-top: 40px;
+          text-align: center;
+        }
+
+        h1 {
+          font-size: 70px;
+          line-height: 0.9;
+        }
+      }
+
