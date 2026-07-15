@@ -25,25 +25,26 @@ body {
         margin-top: 50px;
       }
       h1 {
-        font-size: 200px;
+        font-size: 100px;
         color: brown;
         font-family: "Comfortaa", sans-serif;
       }
       .heading {
-        margin-top: 100px;
+        margin-top: 50px;
       }
       .main-div {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 180px;
-        margin-top: 80px;
+        margin-top: 50px;
       }
       .profile {
-        width: 450px;
-        border-radius: 150px;
-        height: 450px;
+        width: 300px;
+        border-radius: 250px;
+        height: 300px;
         border: 2px solid brown;
+        margin-left: 0px;
       }
       .group {
         display: flex;
@@ -64,3 +65,980 @@ body {
         }
       }
 
+
+/* hero Section */
+      .hero-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting{
+    font-size: 28px;
+    margin: 0;
+}
+
+
+
+.name{
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.role{
+    font-size: 30px;
+    color: #8B1E1E;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.description{
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0;
+}
+
+
+/* About Section */
+
+#about{
+    padding: 80px 10%;
+    background-color: #F8EEDC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .a h2{
+    font-size: 42px;
+    color: #8B1E1E;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.a h2::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #8B1E1E;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+.a{
+    max-width: 900px;
+    background: #F8EEDC;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-left: 6px solid #8B1E1E;
+}
+
+.a p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.a p:last-child{
+    margin-bottom: 0;
+}
+
+/* Education Section */
+
+#education{
+    padding:80px 10%;
+    background:#F8EEDC;
+}
+
+.e-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.e-heading h2{
+    font-size:42px;
+    color:#8B1E1E;
+}
+
+.e-heading p{
+    font-size:18px;
+    color:#555;
+    margin-top:10px;
+}
+
+/* Timeline */
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+    padding-left:30px;
+    border-left:4px solid #8B1E1E;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:50px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:-41px;
+    top:8px;
+    width:18px;
+    height:18px;
+    background:#8B1E1E;
+    border-radius:50%;
+}
+
+.timeline-content{
+    background:#F8EEDC;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.timeline-content:hover{
+    transform:translateY(-5px);
+}
+
+.year{
+    display:inline-block;
+    background:#8B1E1E;
+    color:#F8EEDC;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.timeline-content h3{
+    color:#8B1E1E;
+    margin-bottom:8px;
+}
+
+.timeline-content h4{
+    color:#333;
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.college{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.score{
+    font-size:17px;
+}
+
+
+/* Skills Section */
+
+#skills{
+    padding:80px 10%;
+    background:#F8EEDC;
+}
+
+#skills h1{
+    text-align:center;
+    font-size:42px;
+    color:#8B1E1E;
+    margin-bottom:50px;
+}
+
+/* Grid Layout */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:30px;
+}
+
+/* Skill Card */
+
+.s1{
+    background:#bb3939;
+    border-radius:18px;
+    padding:30px 20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.3s;
+    cursor:pointer;
+    border:2px solid transparent;
+}
+
+/* Logo */
+
+.s1 img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    margin-bottom:18px;
+}
+
+/* Skill Name */
+
+.s1 h2{
+    font-size:20px;
+    color:#F8EEDC;
+    line-height:1.4;
+}
+
+/* Hover Effect */
+
+.s1:hover{
+    transform:translateY(-10px);
+    border-color:#8B1E1E;
+    box-shadow:0 20px 35px rgba(0,0,0,.18);
+}
+
+.s1:hover h2{
+    color:#8B1E1E;
+}
+
+
+
+/* ==========================
+   Projects Section
+========================== */
+
+#projects{
+    padding:80px 10%;
+    background:#F8EEDC;
+}
+
+.project-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.project-heading h2{
+    font-size:42px;
+    color:#8B1E1E;
+    margin-bottom:15px;
+}
+
+.project-heading p{
+    width:70%;
+    margin:auto;
+    font-size:18px;
+    color:#555;
+    line-height:1.7;
+}
+
+/* ==========================
+   Project Grid
+========================== */
+
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:35px;
+}
+
+/* ==========================
+   Project Card
+========================== */
+
+.project-card{
+    background:#F8EEDC;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+}
+
+/* ==========================
+   Project Image
+========================== */
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+/* ==========================
+   Project Title
+========================== */
+
+.project-card h3{
+    font-size:28px;
+    color:#8B1E1E;
+    padding:20px 20px 10px;
+}
+
+/* ==========================
+   Description
+========================== */
+
+.project-card p{
+    padding:0 20px;
+    font-size:16px;
+    color:#555;
+    line-height:1.7;
+    min-height:90px;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.project-buttons{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+}
+
+.project-buttons button{
+
+    width:150px;
+    padding:12px;
+
+    background:#8B1E1E;
+    color:white;
+
+    border:none;
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.project-buttons button:hover{
+
+    background:#6E1717;
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================
+   Remove Anchor Underline
+========================== */
+
+.project-buttons a{
+
+    text-decoration:none;
+
+}
+
+
+
+/* ==========================
+   Experience Section
+========================== */
+
+#experience{
+    padding:80px 10%;
+    background:#F8EEDC;
+}
+
+.experience-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.experience-heading h2{
+    font-size:42px;
+    color:#8B1E1E;
+    margin-bottom:10px;
+}
+
+.experience-heading p{
+    font-size:18px;
+    color:#555;
+}
+
+/* ==========================
+   Experience Card
+========================== */
+
+.experience-card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+
+    background:#F8EEDC;
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+    transition:.4s;
+}
+
+.experience-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+}
+
+/* ==========================
+   Certificate Image
+========================== */
+
+.experience-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.experience-image img{
+
+    width:100%;
+    max-width:350px;
+
+    border-radius:15px;
+
+    border:4px solid #8B1E1E;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.experience-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================
+   Content
+========================== */
+
+.experience-content{
+
+    flex:2;
+
+}
+
+.duration{
+
+    display:inline-block;
+
+    background:#8B1E1E;
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-size:15px;
+
+    margin-bottom:18px;
+
+}
+
+.experience-content h3{
+
+    font-size:32px;
+
+    color:#8B1E1E;
+
+    margin-bottom:8px;
+
+}
+
+.experience-content h4{
+
+    font-size:22px;
+
+    color:#444;
+
+    margin-bottom:20px;
+
+}
+
+.experience-content p{
+
+    font-size:17px;
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+    text-align:justify;
+
+}
+
+/* ==========================
+   Bullet Points
+========================== */
+
+.experience-content ul{
+
+    padding-left:20px;
+
+}
+
+.experience-content li{
+
+    margin-bottom:12px;
+
+    font-size:17px;
+
+    color:#444;
+
+    line-height:1.6;
+
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+
+@media(max-width:900px){
+
+    .experience-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .experience-content{
+
+        text-align:left;
+
+    }
+
+    .experience-image img{
+
+        max-width:300px;
+
+    }
+
+}
+
+
+
+/* ==========================
+   Achievements Section
+========================== */
+
+#achievements{
+    padding:80px 10%;
+    background:#F8EEDC;
+}
+
+.achievement-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.achievement-heading h2{
+    font-size:42px;
+    color:#8B1E1E;
+    margin-bottom:10px;
+}
+
+.achievement-heading p{
+    font-size:18px;
+    color:#555;
+}
+
+/* ==========================
+   Achievement Cards
+========================== */
+
+.achievement-container{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+.achievement-card{
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+    background:#F8EEDC;
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.4s;
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+
+/* ==========================
+   Certificate Image
+========================== */
+
+.achievement-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.achievement-image img{
+
+    width:100%;
+    max-width:320px;
+
+    border-radius:15px;
+
+    border:4px solid #8B1E1E;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.achievement-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================
+   Content
+========================== */
+
+.achievement-content{
+
+    flex:2;
+
+}
+
+.achievement-content h3{
+
+    font-size:30px;
+
+    color:#8B1E1E;
+
+    margin-bottom:8px;
+
+}
+
+.achievement-content h4{
+
+    font-size:22px;
+
+    color:#444;
+
+    margin-bottom:18px;
+
+}
+
+.achievement-content p{
+
+    font-size:17px;
+
+    color:#555;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================
+   Button
+========================== */
+
+.achievement-content button{
+
+    background:#8B1E1E;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 28px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.achievement-content button:hover{
+
+    background:#6E1717;
+
+    transform:scale(1.05);
+
+}
+
+.achievement-content a{
+
+    text-decoration:none;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:900px){
+
+    .achievement-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .achievement-content{
+
+        text-align:left;
+
+    }
+
+    .achievement-image img{
+
+        max-width:280px;
+
+    }
+
+}
+
+/* ==========================
+   Contact Section
+========================== */
+
+#contact{
+    padding:80px 10%;
+    background:#F8EEDC;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    align-items:flex-start;
+}
+
+/* ==========================
+   Left Side
+========================== */
+
+.contact-info{
+    flex:1;
+}
+
+.contact-info h2{
+    font-size:42px;
+    color:#8B1E1E;
+    margin-bottom:20px;
+}
+
+.contact-info>p{
+    font-size:17px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:30px;
+    text-align:justify;
+}
+
+.contact-details p{
+    margin-bottom:20px;
+    font-size:17px;
+    color:#444;
+    line-height:1.7;
+}
+
+.contact-details strong{
+    color:#8B1E1E;
+}
+
+/* ==========================
+   Social Links
+========================== */
+
+.social-links{
+    margin-top:30px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:#fff;
+    background:#8B1E1E;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#6E1717;
+    transform:translateY(-4px);
+}
+
+/* ==========================
+   Contact Form
+========================== */
+
+.contact-form{
+    flex:1;
+    background:#F8EEDC;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.contact-form h2{
+    font-size:34px;
+    color:#8B1E1E;
+    margin-bottom:10px;
+}
+
+.contact-form p{
+    color:#555;
+    margin-bottom:25px;
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+
+    border:2px solid #ddd;
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:#8B1E1E;
+
+}
+
+.contact-form textarea{
+
+    resize:none;
+
+}
+
+.contact-form button{
+
+    background:#8B1E1E;
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:#6E1717;
+
+    transform:scale(1.02);
+
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+
+    background:#8B1E1E;
+    color:white;
+
+    text-align:center;
+
+    padding:25px 10%;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:900px){
+
+    .contact-container{
+
+        flex-direction:column;
+
+    }
+
+    .contact-form{
+
+        width:100%;
+
+    }
+
+    .social-links{
+
+        justify-content:center;
+
+    }
+
+}
