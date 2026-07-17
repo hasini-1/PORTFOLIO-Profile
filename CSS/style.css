@@ -5,52 +5,83 @@ body {
         background-color: rgba(244, 225, 203, 0.879);
         padding-top: 90px;
       }
-      /* Navbar */
 
-.main{
+      .main{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: #F8EEDC;   /* Your background color */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:#F8EEDC;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+    border:5px solid brown;
+    border-radius:45px;
+
+    padding:15px;
+
+    max-width:1450px;
+    margin:20px auto;
+    right:0;
 }
 
+.navbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
 
-      .navbar {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        align-items: center;
-      }
-      .navbar a {
-        text-decoration: none;
-        color: brown;
-        font-size: 16px;
-        padding: 8px 16px;
-        transition: color 0.3s;
-      }
+.navbar a{
+    text-decoration:none;
+    color:brown;
+    font-size:16px;
+    padding:8px 16px;
+    transition:.3s;
+}
 
-      .navbar a:hover {
-        color: rgb(32, 23, 23);
-      }
+.navbar a:hover{
+    color:rgb(32,23,23);
+}
 
-      .main {
-        border: 5px solid brown;
-        border-radius: 45px;
-        padding: 15px;
-        margin-top: 50px;
-      }
-      h1 {
-        font-size: 100px;
-        color: brown;
-        font-family: "Comfortaa", sans-serif;
-      }
-      .heading {
-        margin-top: 50px;
-      }
-      .main-div {
+/* Hide hamburger on desktop */
+.menu-toggle{
+    display:none;
+}
+
+/* Mobile Screen */
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+        font-size:30px;
+        cursor:pointer;
+        color:brown;
+    }
+
+    .navbar{
+        justify-content:space-between;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:90px;
+        left:20px;
+        right:20px;
+        background:#F8EEDC;
+        border:5px solid brown;
+        border-radius:20px;
+        padding:20px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+}
+       .main-div {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -69,19 +100,55 @@ body {
         flex-direction: column;
       }
 
-      @media (max-width: 768px) {
-        .header-container {
-          flex-direction: column;
-          gap: 30px;
-          margin-top: 40px;
-          text-align: center;
-        }
+@media (max-width:768px){
 
-        h1 {
-          font-size: 70px;
-          line-height: 0.9;
-        }
-      }
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:32px;
+        color:brown;
+        cursor:pointer;
+    }
+
+    .nav-links{
+
+        display:none;
+
+        position:absolute;
+
+        top:85px;
+        left:15px;
+        right:15px;
+
+        background:#F8EEDC;
+
+        border:5px solid brown;
+
+        border-radius:20px;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:20px 0;
+
+        gap:20px;
+
+        z-index:9999;
+    }
+
+    .nav-links.active{
+
+        display:flex;
+
+    }
+
+}
 section{
     scroll-margin-top: 100px;
 }
@@ -873,9 +940,7 @@ section{
     align-items:flex-start;
 }
 
-/* ==========================
-   Left Side
-========================== */
+
 
 .contact-info{
     flex:1;
@@ -906,9 +971,7 @@ section{
     color:#8B1E1E;
 }
 
-/* ==========================
-   Social Links
-========================== */
+
 
 .social-links{
     margin-top:30px;
@@ -932,9 +995,7 @@ section{
     transform:translateY(-4px);
 }
 
-/* ==========================
-   Contact Form
-========================== */
+
 
 .contact-form{
     flex:1;
@@ -960,21 +1021,65 @@ section{
     flex-direction:column;
 }
 
+.contact-form{
+
+    background:#F8EEDC;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.contact-form form{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
 .contact-form input,
 .contact-form textarea{
 
     width:100%;
-    padding:15px;
-    margin-bottom:18px;
 
-    border:2px solid #ddd;
-    border-radius:10px;
+    padding:18px 20px;
+
+    background:#F8EEDC;      /* same as body */
+
+    border:2px solid #b48a66;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    color:#333;
 
     outline:none;
 
-    font-size:16px;
-
     transition:.3s;
+
+    box-sizing:border-box;
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+    color:#7a6a5c;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:brown;
+
+    box-shadow:0 0 8px rgba(165,42,42,.2);
 
 }
 
@@ -993,16 +1098,19 @@ section{
 
 .contact-form button{
 
-    background:#8B1E1E;
-    color:white;
+    margin-top:10px;
+
+    padding:16px;
 
     border:none;
 
-    padding:15px;
+    border-radius:12px;
 
-    border-radius:10px;
+    background:brown;
 
-    font-size:17px;
+    color:white;
+
+    font-size:20px;
 
     cursor:pointer;
 
@@ -1012,9 +1120,9 @@ section{
 
 .contact-form button:hover{
 
-    background:#6E1717;
+    transform:translateY(-2px);
 
-    transform:scale(1.02);
+    background:#7d1d1d;
 
 }
 
@@ -1091,4 +1199,78 @@ footer{
 
     transform:translateY(-3px);
 
+}
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+        font-size:32px;
+        color:brown;
+        cursor:pointer;
+    }
+
+    .navbar{
+        justify-content:space-between;
+    }
+
+    .nav-links{
+
+        display:none;
+
+        position:absolute;
+
+        top:90px;
+
+        left:0;
+
+        width:100%;
+
+        background:#F8EEDC;
+
+        border:5px solid brown;
+
+        border-radius:20px;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:20px;
+
+        transition: all 0.3s ease;
+
+    }
+
+    .nav-links.active{
+
+        display:flex;
+
+    }
+
+}
+
+.nav-links{
+    display:none;
+    position:absolute;
+    top:90px;
+    left:15px;
+    right:15px;
+
+    background:#F8EEDC;
+
+    border:5px solid brown;
+    border-radius:20px;
+
+    flex-direction:column;
+    align-items:center;
+
+    padding:20px;
+
+    gap:10px;      /* Instead of large spacing */
+
+    z-index:1000;
+}
+
+.nav-links.active{
+    display:flex;
 }
