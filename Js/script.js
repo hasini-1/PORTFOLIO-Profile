@@ -1,4 +1,3 @@
-alert("JavaScript Loaded");
 const resumeButton = document.querySelector(".resume-btn");
 
 resumeButton.addEventListener("click", () => {
@@ -14,27 +13,21 @@ function sendMail(event) {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value
+        message: document.getElementById("message").value,
     };
 
-    emailjs.send(
-        "service_9jo2rhn",
-        "__ejs-test-mail-service__  ",
-        params
-    )
-    .then(function () {
-        alert("Message sent successfully!");
-
-        document.querySelector("form").reset();
-    })
-    .catch(function (error) {
-        alert("Failed to send message.");
-        console.error(error);
-    });
+    emailjs.send("service_qhj77x5", "template_vtr0554", params)
+        .then(function(response) {
+            console.log("SUCCESS!", response);
+            alert("Message sent successfully!");
+            document.querySelector("form").reset();
+        })
+        .catch(function(error) {
+            console.error("FAILED...", error);
+            alert("Failed to send message.");
+        });
 }
 
-
-emailjs.init("w-zpeVNJ_R49-3uz6");
 
 const menu = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
